@@ -1,2 +1,35 @@
-.title {
+.title-1 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-blue;
+  font-style: italic;
+}
+
+.title-2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-white;
+  font-style: normal;
+}
+
+.title-3 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-secondary;
+  font-style: normal;
 }

@@ -5,7 +5,6 @@
 
 // ///////////////////////////////////////// block
 @import "block/container";
-@import "block/section";
 
 @import "block/button/btn-reset";
 @import "block/button/btn";
@@ -20,7 +19,6 @@
 @import "block/logo";
 // @import "block/breadcrumb";
 @import "block/title/title";
-
 // @import "block/form/form";
 // @import "block/form/form-group";
 // @import "block/form/form-label";
@@ -30,3 +28,12 @@
 
 // ///////////////////////////////////////// display
 // @import "base/display";
+
+@import "block/nav";
+@import "block/social";
+@import "block/phone";
+@import "block/insert";
+@import "block/programs";
+@import "block/search";
+@import "block/help";
+@import "block/services";

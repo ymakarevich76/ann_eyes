@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search__input {
+  max-width: 265px;
+  padding: 5px 10px 6px 45px;
+
+  border: 1px solid $c-black;
+  border-radius: 30px;
+}
+
+.search__input::placeholder {
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+}

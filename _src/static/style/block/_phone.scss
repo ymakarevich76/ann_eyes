@@ -1,0 +1,17 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__link {
+  font-weight: 500;
+  font-size: 22px;
+  font-family: $ff-main;
+  text-align: right;
+  color: $c-secondary;
+  letter-spacing: .4px;
+
+  &:first-child {
+    margin-bottom: 5px;
+  }
+}
