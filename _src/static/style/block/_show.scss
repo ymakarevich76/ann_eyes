@@ -1,0 +1,32 @@
+.show {
+}
+
+.show__title {
+  margin-bottom: 40px;
+}
+
+.show__container {
+  max-width: 1241px;
+}
+
+.show__wrapper {
+  display: flex;
+}
+
+.show__left {
+  flex: 0 0 50%;
+}
+
+.show__wrap-img {
+  min-width: 581px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.show__card {
+  margin-bottom: 80px;
+}
+
+.show__card-title {
+  margin-bottom: 40px;
+}

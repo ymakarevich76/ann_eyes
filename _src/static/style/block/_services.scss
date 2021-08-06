@@ -1,28 +1,64 @@
 .services {
+  padding-bottom: 80px;
 }
 
 .services__title {
-  padding-bottom: 65px;
+  margin-bottom: 63px;
 }
 
-.services__wrapper {
-  display: flex;
-  justify-content: center;
+.services__wrapper.box {
+  margin-bottom: 30px;
 }
 
 .services__link {
-  padding: 15px 14px 25px;
+  display: flex;
+  flex-direction: column;
+}
 
-  background-color: $c-main;
-  border-radius: 10px;
+.services__wrap-img {
+  position: relative;
 
-  &:not(:last-child) {
-    margin-right: 17px;
+  width: 100%;
+  height: 100%;
+}
+
+.services__img {
+  &--1 {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    max-width: 306px;
   }
 
-  &:hover {
-    text-decoration: none;
+  &--2 {
+    position: absolute;
+    top: -22px;
+    left: -15px;
 
-    box-shadow: 1px 2px 14px rgba(27, 58, 205, .85);
+    max-width: 268px;
   }
+
+  &--3 {
+    position: absolute;
+    top: -48px;
+    left: -32px;
+
+    max-width: 299px;
+  }
+
+  &--4 {
+    position: absolute;
+    top: 17px;
+    left: -34px;
+
+    max-width: 301px;
+  }
+}
+
+.services__name {
+  position: relative;
+  top: 70px;
+
+  color: $c-main;
 }

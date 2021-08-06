@@ -8,21 +8,29 @@
   <section class="programs">
     <div class="container">
       <h2 class="visually-hidden">Программы</h2>
-      <div class="programs__wrapper">
-        <a href="#" class="programs__link">
-          <img class="programs__img" src="static/img/programs/img-1.png" alt="Фокусник">
+      <div class="programs__wrapper box">
+        <a href="author-programs.html" class="programs__link box__blue-card">
+          <div class="programs__wrap-img">
+            <img class="programs__img" src="static/img/programs/img-1.png" alt="Фокусник">
+          </div>
           <p class="programs__title title-2">Авторские программы</p>
         </a>
-        <a href="#" class="programs__link">
-          <img class="programs__img" src="static/img/programs/img-2.png" alt="Шары">
+        <a href="#" class="programs__link box__blue-card">
+          <div class="programs__wrap-img">
+            <img class="programs__img" src="static/img/programs/img-2.png" alt="Шары">
+          </div>
           <p class="programs__title title-2">Программы для детей</p>
         </a>
-        <a href="#" class="programs__link">
-          <img class="programs__img" src="static/img/programs/img-3.png" alt="Лошадь">
+        <a href="#" class="programs__link box__blue-card">
+          <div class="programs__wrap-img">
+            <img class="programs__img" src="static/img/programs/img-3.png" alt="Лошадь">
+          </div>
           <p class="programs__title title-2">Программы с животными</p>
         </a>
-        <a href="#" class="programs__link">
-          <img class="programs__img" src="static/img/programs/img-4.png" alt="Свадьба">
+        <a href="#" class="programs__link box__blue-card">
+          <div class="programs__wrap-img">
+            <img class="programs__img" src="static/img/programs/img-4.png" alt="Свадьба">
+          </div>
           <p class="programs__title title-2">Программы для взрослых</p>
         </a>
       </div>
@@ -36,7 +44,7 @@
     <div class="container">
       <h2 class="help__title title-1">Помочь выбрать программу за 2 минуты?</h2>
       <div class="help__wrap-link">
-        <a href="#" class="help__link">Перезвоните мне</a>
+        <a href="#connect" class="help__btn btn">Перезвоните мне</a>
       </div>
     </div>
   </section>
@@ -45,26 +53,44 @@
     <div class="container">
       <h2 class="services__title title-3">Дополнительные услуги</h2>
 
-      <div class="services__wrapper">
-        <a href="#" class="services__link">
-          <img class="services__img" src="static/img/services/img-1.png" alt="Сладости">
-          <p class="services__title title-2">Кэнди бар</p>
+      <div class="services__wrapper box">
+        <a href="#" class="services__link box__blue-card">
+          <div class="services__wrap-img">
+            <img class="services__img services__img--1" src="static/img/services/img-1.png" width="306" height="329"
+              alt="Сладости">
+          </div>
+          <p class="services__name title-2">Кэнди бар</p>
         </a>
-        <a href="#" class="services__link">
-          <img class="services__img" src="static/img/services/img-2.png" alt="Игрушки">
-          <p class="services__title title-2">Декор</p>
+        <a href="#" class="services__link box__blue-card">
+          <div class="services__wrap-img">
+            <img class="services__img services__img--2" src="static/img/services/img-2.png" width="268" height="364"
+              alt="Игрушки">
+          </div>
+          <p class="services__name title-2">Декор</p>
         </a>
-        <a href="#" class="services__link">
-          <img class="services__img" src="static/img/services/img-3.png" alt="Фотоаппарат">
-          <p class="services__title title-2">Фото- и видеосъемка</p>
+        <a href="#" class="services__link box__blue-card">
+          <div class="services__wrap-img">
+            <img class="services__img services__img--3" src="static/img/services/img-3.png" width="299" height="374"
+              alt="Фотоаппарат">
+          </div>
+          <p class="services__name title-2">Фото- и видеосъемка</p>
         </a>
-        <a href="#" class="services__link">
-          <img class="services__img" src="static/img/services/img-4.png" alt="Шары">
-          <p class="services__title title-2">Шары</p>
+        <a href="#" class="services__link box__blue-card">
+          <div class="services__wrap-img">
+            <img class="services__img services__img--4" src="static/img/services/img-4.png" width="301" height="309"
+              alt="Шары">
+          </div>
+          <p class="services__name title-2">Шары</p>
         </a>
       </div>
     </div>
+    <!--/container-->
   </section>
+
+  @@include('block/reviews.html')
+
+  @@include('block/connection.html')
+
 </main>
 
 @@include('block/footer/footer.html')

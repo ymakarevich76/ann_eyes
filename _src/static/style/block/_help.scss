@@ -10,19 +10,3 @@
   display: flex;
   justify-content: center;
 }
-
-.help__link {
-  min-width: 264px;
-  padding: 18px 47px;
-
-  font-weight: 500;
-  font-size: $fz-main;
-  line-height: 1.2;
-  font-family: $ff-main;
-  text-align: center;
-  color: $c-black;
-  letter-spacing: .02em;
-
-  background-color: $c-accent;
-  border-radius: 30px;
-}

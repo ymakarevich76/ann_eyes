@@ -1,0 +1,72 @@
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.desc__text {
+  position: relative;
+
+  margin-bottom: 12px;
+  padding-left: 34px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+
+  &--time {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      background: url("../img/icon/time-blue.svg") center center no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &--age {
+    margin-bottom: 17px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 25px;
+      height: 25px;
+
+      background: url("../img/icon/baby-blue.svg") center center no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+.desc-cost {
+  color: $c-secondary;
+}
+
+.desc__cost {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: .8;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+}
+
+.desc__btn {
+  min-width: 183px;
+  margin-top: 40px;
+}

@@ -1,0 +1,128 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/insert.html')
+
+  <div class="container">
+    <ul class="breadcrumb list-reset">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumb__item breadcrumb__item--current">Декорации</li>
+    </ul>
+  </div>
+
+  <section class="show">
+    <div class="show__container container">
+      <h2 class="show__title title-3">Декорации и фотозоны для детей</h2>
+
+      <div class="show__wrapper">
+        <div class="show__left">
+          <div class="show__wrap-img">
+            <img src="static/img/decoration/img-1.png" width="581" height="581" alt="Замок">
+          </div>
+          <div class="show__left-desc desc">
+            <span class="desc__cost">от 8 000 ₽</span>
+            <a href="" class="desc__btn btn">Заказать</a>
+          </div>
+        </div>
+        <!--/show__left-->
+        <div class="show__right services-desc">
+          <h3 class="services-desc__title title-4">Мы — не агенты, мы — артисты</h3>
+          <p class="services-desc__text">
+            Уважаемые клиенты, представляем Вашему вниманию аренду декораций и фотозон.
+          </p>
+          <br>
+          <p class="services-desc__text">
+            В нашем арсенале огромное количество тематических фотозон для взрослых и детей. На любой случай жизни!
+            <br>
+            На любой возраст! На любой бюджет!
+          </p>
+          <br>
+          <p class="services-desc__text">
+            <b class="services-desc__text services-desc__text--bold">
+              Стоимость аренды декора — от 8 000₽
+            </b>
+          </p>
+          <br>
+          <p class="services-desc__text">
+            Внимание! Стоимость доставки рассчитывается
+            в индивидуальном порядке и зависит от местоположения заказа, а также от габаритов доставляемого декора.
+          </p>
+          <br>
+          <p class="services-desc__text">
+            Все заявки по декору обрабатываются в частном порядке.
+          </p>
+          <br>
+          <p class="services-desc__text services-desc__text--sm">
+            *Дополнительные расходы на разгрузку, погрузку, подъем и спуск реквизита — 500₽ за одну программу без
+            животных и 1 000₽ за одно шоу с животными. Стоимость технического обслуживания самых объемных программ -
+            2 000₽: Неоновая дискотека, Металлическое шоу, Поролоновое шоу, Бэби-дэнс, Лего-шоу, Пенное шоу, Царский
+            цирк, Карлики и великан, Экзотическое шоу, Цирк лесных зверей, Китайский цирк, Гигантские фокусы,
+            Неоновое шоу светящихся зверей. При заказе праздника "Под ключ", стоимость технического обслуживания
+            мероприятия составляет 2 000₽ за все мероприятие, продолжительностью до 4х часов. Каждый последующий час
+            — 500₽. Более подробно с техническим райдером и стоимостью выезда
+            по области можно ознакомиться в разделе
+            <a href="#" class="services-desc__text services-desc__text--link">Райдер</a>.
+          </p>
+        </div>
+        <!--/show__right-->
+      </div>
+      <!--/show__wrapper-->
+    </div>
+  </section>
+
+  <section class="photo-events">
+    <div class="container">
+      <h2 class="photo-events__title title-3">Фото с мероприятий</h2>
+
+      <section class="image-slider">
+        <div class="container">
+          <h2 class="visually-hidden">Слайдер картинок</h2>
+          <div class="image-slider__container swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__wrap-img">
+                  <img src="static/img/decoration/image-1.png" width="290" height="290" alt="Фото-1">
+                </div>
+              </div>
+
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__wrap-img">
+                  <img src="static/img/decoration/image-2.png" width="290" height="290" alt="Фото-2">
+                </div>
+              </div>
+
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__wrap-img">
+                  <img src="static/img/decoration/image-3.png" width="290" height="290" alt="Фото-3">
+                </div>
+              </div>
+
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__wrap-img">
+                  <img src="static/img/decoration/image-4.png" width="260" height="290" alt="Фото-4">
+                </div>
+              </div>
+            </div>
+            <!--/image-slider__wrapper-->
+            <div class="image-slider__btn-prev swiper-button-prev"></div>
+            <div class="image-slider__btn-next swiper-button-next"></div>
+          </div>
+          <!--/image-slider-->
+        </div>
+
+      </section>
+    </div>
+  </section>
+
+  @@include('block/reviews.html')
+
+  @@include('block/connection.html')
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

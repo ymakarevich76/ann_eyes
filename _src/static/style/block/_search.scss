@@ -4,11 +4,17 @@
 }
 
 .search__input {
-  max-width: 265px;
+  max-width: 264px;
   padding: 5px 10px 6px 45px;
 
   border: 1px solid $c-black;
   border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    border-color: $c-secondary;
+    outline: none;
+  }
 }
 
 .search__input::placeholder {

@@ -1,29 +1,13 @@
 .programs {
-  padding: 80px 0 40px;
+  padding: 80px 0 25px;
 }
 
 .programs__wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 .programs__link {
-  padding: 15px 14px 25px;
-
-  background-color: $c-main;
-  border-radius: 10px;
-
-  &:not(:last-child) {
-    margin-right: 17px;
-  }
-
-  &:hover {
-    text-decoration: none;
-
-    box-shadow: 1px 2px 14px rgba(27, 58, 205, .85);
-  }
 }
 
 .programs__img {
-  padding-bottom: 20px;
+  margin: 0 auto 20px;
 }

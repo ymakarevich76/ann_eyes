@@ -1,0 +1,11 @@
+.social-other {
+  display: flex;
+  justify-content: space-between;
+  max-width: 162px;
+}
+
+.social-other__link {
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}

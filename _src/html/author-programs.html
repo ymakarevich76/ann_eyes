@@ -1,0 +1,23 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/insert.html')
+  <h2 class="author-programs__title title-1">Авторские программы</h2>
+
+
+  <section class="filter">
+    <div class="container">
+      <h2 class="visually-hidden">Фильтр</h2>
+      @@include('block/search.html')
+
+    </div>
+  </section>
+
+  @@include('block/card.html')
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

@@ -1,0 +1,25 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -8px;
+}
+
+
+.box__blue-card {
+  width: calc(100% / 4 - 16px);
+  min-height: 360px;
+  margin: 0 8px 16px;
+  padding: 15px 14px 25px;
+
+  background-color: $c-main;
+  border-radius: 10px;
+
+  transition: .2s;
+
+  &:hover {
+    text-decoration: none;
+
+    box-shadow: 1px 2px 14px rgba(27, 58, 205, .85);
+  }
+}
