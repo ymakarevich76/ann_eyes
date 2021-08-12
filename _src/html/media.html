@@ -1,0 +1,133 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/insert.html')
+  @@include('block/breadcrumb.html')
+
+  <section class="media">
+    <div class="media__container container container--sm">
+      <h2 class="media__title title-3">Медийность</h2>
+
+      <div class="media__desc">
+        <h3 class="media__desc-title title-4">Мы — не агенты, мы — артисты</h3>
+
+        <p class="media__desc-text text">
+          Уважаемые клиенты, праздничная компания Анны Кранц<br>
+          с радостью принимает предложения, направленные
+          на популяризацию авторских программ и компании в целом.
+        </p>
+        <br>
+        <p class="media__desc-text text">
+          Если у Вас интересное мероприятие, с участием медийных личностей, СМИ, блогеров, мы готовы рассмотреть<br>
+          выступление по бартеру.
+        </p>
+        <br>
+        <p class="media__desc-text text">
+          Каждое обращение рассматривается лично<br>
+          руководителем компании.
+        </p>
+        <br>
+        <p class="media__desc-text text text--medium">
+          В нашем портфолио выступления у следующих звезд:<br>
+          Алла Пугачева и Максим Галкин, Филипп Киркоров, Дмитрий
+          и Полина Дибровы, Светлана Лабада, Глюкоза, Ирина Дубцова, Ани Лорак, Владимир Пресняков и Наталья Подольская
+          и
+          многие другие.
+        </p>
+        <br>
+        <p class="media__desc-text text">
+          Задавайте свои вопросы по телефону <b class="media__desc-text text text--bold-color">+7 (985)
+            191-47-75</b><br>
+          или пишите в <b class="media__desc-text text text--bold-color">Wa, Vb, Tgm</b> (также привязаны к данному
+          номеру).
+        </p>
+        <br>
+        <p class="media__desc-text text">
+          Будем рады Вам помочь!
+        </p>
+        <br>
+        <p class="media__desc-text text">
+          С уважением к Вам, Анна Кранц и компания.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="video-slider">
+    <div class="container">
+      <h2 class="visually-hidden">Слайдер видео</h2>
+      <div class="video-slider__container swiper-container">
+        <div class="video-slider__wrapper swiper-wrapper">
+
+          <div class="video-slider__slide swiper-slide">
+            <div class="video-slider__wrap-img">
+              <img src="static/img/slider/video-2.png" alt="Фото-1">
+            </div>
+          </div>
+
+          <div class="video-slider__slide swiper-slide">
+            <div class="video-slider__wrap-img">
+              <img src="static/img/slider/video-2.png" alt="Фото-2">
+            </div>
+          </div>
+        </div>
+        <!--/video-slider__wrapper-->
+        <div class="video-slider__btn-prev swiper-button-prev"></div>
+        <div class="video-slider__btn-next swiper-button-next"></div>
+      </div>
+      <!--/video-slider-->
+    </div>
+
+  </section>
+
+  <section class="image-slider">
+    <div class="container">
+      <h2 class="visually-hidden">Слайдер картинок</h2>
+      <div class="image-slider__container swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__wrap-img">
+              <img src="static/img/slider/media-1.png" width="290" height="290" alt="Фото-1">
+            </div>
+          </div>
+
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__wrap-img">
+              <img src="static/img/slider/media-2.png" width="290" height="290" alt="Фото-2">
+            </div>
+          </div>
+
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__wrap-img">
+              <img src="static/img/slider/media-3.png" width="290" height="290" alt="Фото-3">
+            </div>
+          </div>
+
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__wrap-img">
+              <img src="static/img/slider/media-4.png" width="260" height="290" alt="Фото-4">
+            </div>
+          </div>
+        </div>
+        <!--/image-slider__wrapper-->
+        <div class="image-slider__btn-prev swiper-button-prev"></div>
+        <div class="image-slider__btn-next swiper-button-next"></div>
+      </div>
+      <!--/image-slider-->
+    </div>
+
+  </section>
+
+
+  @@include('block/reviews-slider.html')
+
+  @@include('block/connection.html')
+</main>
+
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

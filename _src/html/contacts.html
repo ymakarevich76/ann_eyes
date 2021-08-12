@@ -1,0 +1,71 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+  @@include('block/insert.html')
+  @@include('block/breadcrumb.html')
+
+
+  <section class="contacts">
+    <div class="contacts container container--sm">
+      <h2 class="contacts__title title-3">Контакты</h2>
+
+      <div class="contacts__desc">
+        <h3 class="contacts__desc-title title-4">Мы — не агенты, мы — артисты</h3>
+
+        <p class="contacts__desc-text text">
+          Уважаемые, клиенты!
+        </p>
+        <br>
+        <p class="contacts__desc-text text">
+          Если Вы решили остановить свой выбор на нашей компании
+          – мы Вам очень рады! В наших силах сделать Ваш праздник, поистине, незабываемым.
+        </p>
+        <br>
+        <p class="contacts__desc-text text text--medium">
+          Обращайтесь к нам любым удобным для Вас способом:
+        </p>
+      </div>
+
+      <div class="contacts__contain">
+        <div class="contacts__phone phone">
+          <a class="contacts__phone-link phone__link" href="tel:+79851914775">+7 (985) 191-47-75 (Анна)</a>
+          <a class="contacts__phone-link phone__link" href="tel:+74951775245">+7 (495) 177-52-45</a>
+        </div>
+
+        <div class="contacts__mail">
+          <a class="contacts__mail-link" href="#">maranjkad@mail.ru</a>
+          <a class="contacts__mail-link" href="#">anyutiniglazkiru@yandex.ru</a>
+        </div>
+
+        <div class="contacts__social social">
+          <a href="#" class="social__link" aria-label="Вайбер">
+            <img src="static/img/icon/viber.png" alt="Вайбер">
+          </a>
+          <a href="#" class="social__link" aria-label="Телеграм">
+            <img src="static/img/icon/teleg.png" alt="Телеграм">
+          </a>
+          <a href="#" class="social__link" aria-label="Вотсапп">
+            <img src="static/img/icon/whatsapp.png" alt="Вотсапп">
+          </a>
+        </div>
+
+        <div class="contacts__address">
+          <p class="contacts__address-text">г. Москва, пр-т м. Жукова 28</p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  @@include('block/reviews-slider.html')
+
+  @@include('block/connection.html')
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

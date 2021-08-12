@@ -1,0 +1,33 @@
+.about-us {
+  margin-bottom: 80px;
+}
+
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  // max-width: 670px;
+}
+
+.about-us__title {
+  margin-bottom: 35px;
+}
+
+.about-us__wrap-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.about-us__desc {
+  // max-width: 610px;
+  margin: 0 auto;
+}
+
+.about-us__desc-title {
+  margin-bottom: 40px;
+}
+
+.about-us__desc-text {
+  font-size: $fz-main;
+  line-height: 1.37;
+}

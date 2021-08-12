@@ -1,4 +1,17 @@
 .tour__title {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
+.tour__desc-title {
+  margin-bottom: 30px;
+}
+
+.tour__desc-wrap {
+  max-width: 764px;
+  margin: 0 auto 35px;
+}
+
+.tour__desc-text {
+  font-size: $fz-main;
+  line-height: 1.37;
+}

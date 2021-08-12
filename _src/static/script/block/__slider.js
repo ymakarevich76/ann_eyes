@@ -29,3 +29,28 @@ const videoSlider = new Swiper('.video-slider__container', {
   loop: true,
 });
 
+const bigSlider = new Swiper('.slider-big__container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '" > ' + (index + 1) + '</span>';
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+
+  slidesPerView: 1,
+  initialSlide: 1,
+});
+
+// var sliderThumbs = new Swiper('.slider-thumbs', {
+
+//   slideToClickedSlide: true,
+// });
+
+// bigSlider.params.control = sliderThumbs;
+// sliderThumbs.params.control = bigSlider;

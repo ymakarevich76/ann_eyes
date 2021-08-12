@@ -1,0 +1,7 @@
+.fancybox-bg {
+  background: $c-main;
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: .5;
+}
