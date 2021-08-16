@@ -8,6 +8,10 @@
   text-align: center;
   color: $c-blue;
   font-style: italic;
+
+  @media (max-width: $lg) {
+    font-size: $fz-secondary;
+  }
 }
 
 .title-2 {
@@ -20,6 +24,11 @@
   text-align: center;
   color: $c-white;
   font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: 12px;
+    line-height: 1.1;
+  }
 }
 
 .title-3 {
@@ -32,6 +41,10 @@
   text-align: center;
   color: $c-secondary;
   font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
 }
 
 .title-4 {
@@ -44,4 +57,9 @@
   text-align: center;
   color: $c-secondary;
   font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: $fz-secondary;
+    text-align: left;
+  }
 }

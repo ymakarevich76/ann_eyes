@@ -3,6 +3,7 @@ $ff-main: "Gilroy", sans-serif;
 
 // //////////////////////////////////////// font-size
 $fz-main: 20px;
+$fz-secondary: 16px;
 
 // //////////////////////////////////////// colors
 $c-main: #1b3acd;
@@ -13,12 +14,14 @@ $c-black: #000;
 $c-blue: #1d3cce;
 $c-gray: #bdbdbd;
 $c-gray-dark: #828282;
+$c-green: #5fd440;
 
 // //////////////////////////////////////// breakpoints
-$sl: 1499.98px;
+// $sl: 1499.98px;
+$sl: 1439.98px;
 $xl: 1199.98px;
 // $lg: 991.98px;
-$lg: 1024px;
+$lg: 1023.98px;
 $md: 767.98px;
 $sm: 575.98px;
 $xs: 425.98px;

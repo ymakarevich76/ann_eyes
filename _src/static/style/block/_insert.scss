@@ -1,9 +1,13 @@
 .insert {
-  height: 135px;
-  padding: 41px;
+  height: auto;
+  padding: 42px;
 
   background: linear-gradient(to right, #fff 0%,#ffe600 50%, #ffe600 50%, #fff 100%);
   box-shadow: 0 -1px 2px rgba(0, 0, 0, .25);
+
+  @media (max-width: $lg) {
+    padding: 13px 18px 10px;
+  }
 }
 
 .insert__title {

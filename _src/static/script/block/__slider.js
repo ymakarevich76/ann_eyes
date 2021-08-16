@@ -14,9 +14,21 @@ const imgSlider = new Swiper('.image-slider__container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  slidesPerView: 4,
+
   loop: true,
   spaceBetween: 23,
+  slidesPerView: 1,
+
+  breakpoints: {
+
+    1024: {
+      slidesPerView: 3,
+    },
+
+    1440: {
+      slidesPerView: 4,
+    }
+  },
 });
 
 const videoSlider = new Swiper('.video-slider__container', {

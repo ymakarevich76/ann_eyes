@@ -1,4 +1,11 @@
 .author-programs__title {
+  margin-top: 0;
   margin-bottom: 33px;
-  padding-top: 48px;
+
+  @media (max-width: $lg) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: $fz-main;
+  }
 }

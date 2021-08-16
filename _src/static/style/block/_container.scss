@@ -7,12 +7,23 @@
   padding-right: 30px;
   padding-left: 30px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sl) {
+    max-width: 882px;
     padding-right: 15px;
     padding-left: 15px;
   }
 
+  @media (max-width: $lg) {
+    max-width: 320px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
   &--sm {
     max-width: 670px;
+
+    @media (max-width: $sl) {
+      max-width: 803px;
+    }
   }
 }

@@ -1,3 +1,98 @@
 .filter {
   margin-bottom: 35px;
+
+  @media (max-width: $sl) {
+    margin-bottom: 78px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 40px;
+  }
+}
+
+.filter__container {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $sl) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.filter__select-wrap {
+  position: relative;
+
+  margin-left: 18%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+
+    display: block;
+    width: 20px;
+    height: 24px;
+
+    background: url("../img/icon/select.svg") center center no-repeat;
+    background-size: 100%;
+
+    @media (max-width: $lg) {
+      top: -4px;
+      left: 18px;
+
+      width: 17px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    background-color: $c-white;
+
+    @media (max-width: $lg) {
+      top: 4px;
+    }
+  }
+
+
+  @media (max-width: $sl) {
+    margin-top: 38px;
+    margin-left: 44px;
+  }
+
+  @media (max-width: $lg) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+.filter__select {
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+  letter-spacing: .02em;
+
+  background-image: none;
+  border-color: transparent;
+
+  @media (max-width: $lg) {
+    padding-left: 40px;
+
+    font-weight: 400;
+    font-size: 12px;
+  }
 }

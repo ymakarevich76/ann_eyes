@@ -1,13 +1,39 @@
 .card {
   margin-bottom: 80px;
+  @media (max-width: $sl) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 25px;
+  }
+}
+
+.card__link.box__blue-card {
+  @media (max-width: $sl) {
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: $lg) {
+    min-height: 256px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
 }
 
 .card__wrap-img {
-  padding-bottom: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 7px;
+  }
 }
 
 .card__desc {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
 
   text-shadow: 1px 2px 4px rgba(0, 0, 0, .25);
@@ -16,11 +42,20 @@
 .card__title {
   margin-bottom: 15px;
 
+  font-size: 28px;
+  line-height: 1.1;
   text-align: left;
+
+  @media (max-width: $lg) {
+    margin-bottom: 12px;
+
+    font-size: $fz-secondary;
+  }
 }
 .card__desc-content {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 }
 
 .card__desc-text {
@@ -35,8 +70,18 @@
   color: $c-white;
   font-style: normal;
 
+  @media (max-width: $lg) {
+    padding-left: 28px;
+
+    font-size: 12px;
+  }
+
   &--time {
     margin-bottom: 12px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 18px;
+    }
 
     &:before {
       content: "";
@@ -49,11 +94,23 @@
       height: 20px;
 
       background: url("../img/icon/time.svg") center center no-repeat;
+      background-size: 100%;
+
+      @media (max-width: $lg) {
+        width: 15px;
+        height: 15px;
+
+        background-size: 100%;
+      }
     }
   }
 
   &--age {
     margin-bottom: 17px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 13px;
+    }
 
     &:before {
       content: "";
@@ -66,7 +123,23 @@
       height: 25px;
 
       background: url("../img/icon/baby.svg") center center no-repeat;
+      background-size: 100%;
+
+      @media (max-width: $lg) {
+        width: 18px;
+        height: 14px;
+
+        background-size: 100%;
+      }
     }
+  }
+}
+
+.card__desc-text br {
+  display: none;
+
+  @media (max-width: $lg) {
+    display: block;
   }
 }
 
@@ -77,4 +150,8 @@
   font-family: $ff-main;
   color: $c-white;
   font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
 }

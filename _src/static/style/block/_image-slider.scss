@@ -4,12 +4,16 @@
 
 .image-slider .container {
   max-width: 1241px;
+
+  @media (max-width: $sl) {
+    max-width: 881px;
+  }
 }
 
 .image-slider__slide.swiper-slide {
-  width: 290px;
+  // width: 290px;
 }
 
 .image-slider__wrap-img {
-  width: 290px;
+  // width: 260px;
 }

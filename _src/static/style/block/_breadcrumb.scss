@@ -1,14 +1,36 @@
 .breadcrumb {
   display: flex;
-  // @extend .list-reset;
-  padding: 40px 0;
+  flex-wrap: wrap;
+  margin: 40px 0;
+
+  @media (max-width: $lg) {
+    margin-top: 20px;
+  }
 }
 
 .breadcrumb__item {
   position: relative;
 
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-gray-dark;
+  font-style: normal;
+  white-space: nowrap;
+
+  @media (max-width: $lg) {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.1;
+  }
+
   &:not(:last-child) {
     margin-right: 35px;
+
+    @media (max-width: $lg) {
+      margin-right: 18px;
+    }
   }
 
   &:not(:last-child)::after {
@@ -22,25 +44,20 @@
     height: 10px;
 
     background: url("../img/icon/arrow-right.svg") center center no-repeat;
-  }
+    background-size: 100%;
 
-  &--current {
-    font-weight: 500;
-    font-size: $fz-main;
-    line-height: 1.2;
-    font-family: $ff-main;
-    color: $c-gray-dark;
-    font-style: normal;
+    @media (max-width: $lg) {
+      top: 1px;
+      right: -15px;
+
+      width: 8px;
+      height: 5px;
+    }
   }
 }
 
 .breadcrumb__link {
-  font-weight: 500;
-  font-size: $fz-main;
-  line-height: 1.2;
-  font-family: $ff-main;
-  color: $c-gray-dark;
-  font-style: normal;
+  color: inherit;
 
   &:hover {
     text-decoration: none;

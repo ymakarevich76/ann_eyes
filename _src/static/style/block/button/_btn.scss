@@ -13,6 +13,14 @@
   background-color: $c-accent;
   border-radius: 30px;
 
+  @media (max-width: $lg) {
+    min-width: 284px;
+    padding: 12px 47px;
+
+    font-weight: 400;
+    font-size: $fz-secondary;
+  }
+
   &:hover {
     color: $c-secondary;
     text-decoration: none;

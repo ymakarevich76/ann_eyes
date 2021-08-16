@@ -5,6 +5,12 @@
   <!-- //////////////////////////////////////////////////////////  -->
   @@include('block/insert.html')
 
+
+  <form class="search search--sm" id="form-search">
+    <input type="search" class="search__input" name="search" placeholder="Поиск программ...">
+  </form>
+
+
   <section class="programs">
     <div class="container">
       <h2 class="visually-hidden">Программы</h2>
@@ -19,33 +25,37 @@
           <div class="programs__wrap-img">
             <img class="programs__img" src="static/img/programs/img-2.png" alt="Шары">
           </div>
-          <p class="programs__title title-2">Программы для детей</p>
+          <p class="programs__title title-2">Программы<br> для детей</p>
         </a>
         <a href="#" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
             <img class="programs__img" src="static/img/programs/img-3.png" alt="Лошадь">
           </div>
-          <p class="programs__title title-2">Программы с животными</p>
+          <p class="programs__title title-2">Программы<br> с животными</p>
         </a>
         <a href="#" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
             <img class="programs__img" src="static/img/programs/img-4.png" alt="Свадьба">
           </div>
-          <p class="programs__title title-2">Программы для взрослых</p>
+          <p class="programs__title title-2">Программы<br> для взрослых</p>
         </a>
       </div>
     </div>
     <!--/container-->
   </section>
 
-  @@include('block/search.html')
+  <!-- @@include('block/search.html', {class: 'd-lg'}) -->
+
+  <form class="search search--lg" id="form-search">
+    <input type="search" class="search__input" name="search" placeholder="Поиск программ...">
+  </form>
+
+
 
   <section class="help">
-    <div class="container">
-      <h2 class="help__title title-1">Помочь выбрать программу за 2 минуты?</h2>
-      <div class="help__wrap-link">
-        <a href="#connect" class="help__btn btn">Перезвоните мне</a>
-      </div>
+    <h2 class="help__title title-1">Помочь выбрать программу<br> за 2 минуты?</h2>
+    <div class="help__wrap-link">
+      <a href="#connect" class="help__btn btn">Перезвоните мне</a>
     </div>
   </section>
 
@@ -56,29 +66,37 @@
       <div class="services__wrapper box">
         <a href="#" class="services__link box__blue-card">
           <div class="services__wrap-img">
-            <img class="services__img services__img--1" src="static/img/services/img-1.png" width="306" height="329"
-              alt="Сладости">
+            <picture>
+              <source srcset="static/img/services/img-1.png" media="(min-width: 1440px)">
+              <img class="services__img services__img--1" src="static/img/services/img-1-mob.png" alt="Сладости">
+            </picture>
           </div>
           <p class="services__name title-2">Кэнди бар</p>
         </a>
         <a href="#" class="services__link box__blue-card">
           <div class="services__wrap-img">
-            <img class="services__img services__img--2" src="static/img/services/img-2.png" width="268" height="364"
-              alt="Игрушки">
+            <picture>
+              <source srcset="static/img/services/img-2.png" media="(min-width: 1440px)">
+              <img class="services__img services__img--2" src="static/img/services/img-2-mob.png" alt="Игрушки">
+            </picture>
           </div>
           <p class="services__name title-2">Декор</p>
         </a>
         <a href="#" class="services__link box__blue-card">
           <div class="services__wrap-img">
-            <img class="services__img services__img--3" src="static/img/services/img-3.png" width="299" height="374"
-              alt="Фотоаппарат">
+            <picture>
+              <source srcset="static/img/services/img-3.png" media="(min-width: 1440px)">
+              <img class="services__img services__img--3" src="static/img/services/img-3-mob.png" alt="Фотоаппарат">
+            </picture>
           </div>
-          <p class="services__name title-2">Фото- и видеосъемка</p>
+          <p class="services__name title-2">Фото-<br> и видеосъемка</p>
         </a>
         <a href="#" class="services__link box__blue-card">
           <div class="services__wrap-img">
-            <img class="services__img services__img--4" src="static/img/services/img-4.png" width="301" height="309"
-              alt="Шары">
+            <picture>
+              <source srcset="static/img/services/img-4.png" media="(min-width: 1440px)">
+              <img class="services__img services__img--4" src="static/img/services/img-4-mob.png" alt="Шары">
+            </picture>
           </div>
           <p class="services__name title-2">Шары</p>
         </a>

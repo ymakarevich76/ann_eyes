@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
 }
 
 .desc__text {
@@ -18,6 +18,10 @@
   color: $c-secondary;
   font-style: normal;
 
+  @media (max-width: $lg) {
+    font-size: 12px;
+  }
+
   &--time {
     &:before {
       content: "";
@@ -31,6 +35,11 @@
 
       background: url("../img/icon/time-blue.svg") center center no-repeat;
       background-size: 100%;
+
+      @media (max-width: $lg) {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
@@ -49,6 +58,11 @@
 
       background: url("../img/icon/baby-blue.svg") center center no-repeat;
       background-size: 100%;
+
+      @media (max-width: $lg) {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }
@@ -64,6 +78,10 @@
   font-family: $ff-main;
   color: $c-secondary;
   font-style: normal;
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
 }
 
 .desc__btn {

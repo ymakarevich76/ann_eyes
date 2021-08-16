@@ -1,30 +1,92 @@
 .connection {
-  margin-bottom: 130px;
+  margin-bottom: 100px;
+
+  @media (max-width: $sl) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $lg) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
 }
 
 .connection__container {
   display: flex;
   max-width: 1290px;
+
+  @media (max-width: $sl) {
+    max-width: 881px;
+  }
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
 }
 
 .connection__wrap-img {
   position: relative;
 
   flex: 0 0 480px;
+
+  @media (max-width: $lg) {
+    display: flex;
+    flex-basis: 275px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
 }
 
 .connection__img {
   position: absolute;
   top: -47px;
   left: -82px;
+
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $sl) {
+    top: -82px;
+    left: -91px;
+
+    width: 450px;
+    height: auto;
+  }
+
+  @media (max-width: $lg) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 210px;
+    height: 249px;
+  }
 }
 
 .connection__content {
   padding-top: 36px;
+
+  @media (max-width: $sl) {
+    padding-top: 0;
+  }
 }
 
 .connection__title {
   margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+
+    font-size: $fz-main;
+  }
+}
+
+.connection__title br {
+  display: block;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
 
 .connection__form-box {
@@ -41,15 +103,28 @@
 
   &:first-child {
     margin-bottom: 20px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 15px;
+    }
   }
-  &:nth-child(2) {
-    margin-bottom: 27px;
-  }
+  // &:nth-child(2) {
+  //   margin-bottom: 27px;
+
+  //   @media (max-width: $lg) {
+  //     margin-bottom: 15px;
+  //   }
+  // }
 
   &:hover,
   &:focus {
     border-color: $c-main;
     outline: none;
+  }
+
+  @media (max-width: $lg) {
+    min-width: 284px;
+    padding: 9px 25px;
   }
 }
 
@@ -61,8 +136,16 @@
   color: $c-gray-dark;
   font-style: normal;
   letter-spacing: .02em;
+
+  @media (max-width: $lg) {
+    font-size: $fz-secondary;
+  }
 }
 
 .connection__form-btn {
-  border: none;
+  margin-top: 27px;
+
+  @media (max-width: $lg) {
+    margin-top: 19px;
+  }
 }

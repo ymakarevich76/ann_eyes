@@ -3,7 +3,7 @@
   position: relative;
   top: -8px;
 
-  flex: 0 0 560px;
+  // flex: 0 0 560px;
 }
 
 .services-desc__title {
@@ -23,8 +23,20 @@
 
     transition: .2s;
 
+    @media (max-width: $lg) {
+      font-size: 12px;
+    }
+
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+.services-desc__text br {
+  display: block;
+
+  @media (max-width: $lg) {
+    display: none;
   }
 }

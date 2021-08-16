@@ -6,13 +6,16 @@
   @@include('block/insert.html')
   @@include('block/breadcrumb.html')
   <section class="show">
-    <div class="show__container container">
+    <div class="show__container">
       <h2 class="show__title title-3">Шоу енотов</h2>
 
       <div class="show__wrapper">
         <div class="show__left">
           <div class="show__wrap-img">
-            <img src="static/img/show/img-1.png" width="581" height="581" alt="Анна с енотом">
+            <picture>
+              <source srcset="static/img/show/img-1.png" media="(min-width: 1024px)">
+              <img class="show__img" src="static/img/show/img-1-mob.png" alt="Анна с енотом">
+            </picture>
           </div>
           <div class="show__left-desc desc">
             <span class="desc__text desc__text--time">20 минут + интерактив</span>
@@ -94,7 +97,7 @@
 
           <div class="image-slider__slide swiper-slide">
             <div class="image-slider__wrap-img">
-              <img src="static/img/slider/image-1.png" width="260" height="290" alt="Фото-4">
+              <img src="static/img/slider/image-1.png" width="290" height="290" alt="Фото-4">
             </div>
           </div>
         </div>
@@ -114,14 +117,14 @@
         <div class="video-slider__wrapper swiper-wrapper">
 
           <div class="video-slider__slide swiper-slide">
-            <div class="video-slider__wrap-img">
-              <img src="static/img/slider/video.png" alt="Фото-1">
+            <div class="video-slider__wrap-video">
+              <iframe src="https://www.youtube.com/embed/qjm1eaG4WS0" frameborder="0" width="550" height="309"></iframe>
             </div>
           </div>
 
           <div class="video-slider__slide swiper-slide">
-            <div class="video-slider__wrap-img">
-              <img src="static/img/slider/video.png" alt="Фото-2">
+            <div class="video-slider__wrap-video">
+              <iframe src="https://www.youtube.com/embed/qjm1eaG4WS0" frameborder="0" width="550" height="309"></iframe>
             </div>
           </div>
         </div>
@@ -135,8 +138,12 @@
   </section>
 
   <section class="show__card">
-    <h2 class="show__card-title title-3">Также вам могут понравиться</h2>
+    <h2 class="show__card-title title-3">Также вам могут<br> понравиться</h2>
     @@include('block/card.html')
+    <div class="show__wrap-btn">
+      <button type="button" class="show__btn btn btn-reset">Все программы</button>
+    </div>
+
   </section>
 
   @@include('block/reviews-slider.html')

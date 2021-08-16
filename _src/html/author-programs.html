@@ -4,18 +4,42 @@
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
   @@include('block/insert.html')
+
+  @@include('block/breadcrumb.html')
+
   <h2 class="author-programs__title title-1">Авторские программы</h2>
 
 
   <section class="filter">
-    <div class="container">
+    <div class="container filter__container">
       <h2 class="visually-hidden">Фильтр</h2>
+
       @@include('block/search.html')
 
+      <div class="filter__select-wrap">
+        <select class="filter__select" name="select" form="form-search">
+          <option value="value2" selected>Сначала популярные</option>
+          <option value="value1">Сначала дорогие</option>
+          <option value="value3">Сначала дешевые</option>
+          <option value="value1">фильтр 1</option>
+          <option value="value3">фильтр 2</option>
+        </select>
+      </div>
     </div>
   </section>
 
   @@include('block/card.html')
+
+  <section class="help help--sm">
+    <h2 class="help__title title-1">Помочь выбрать программу<br> за 2 минуты?</h2>
+    <div class="help__wrap-link">
+      <a href="#connect" class="help__btn btn">Перезвоните мне</a>
+    </div>
+  </section>
+
+  @@include('block/reviews-slider.html')
+
+  @@include('block/connection.html')
 
 </main>
 

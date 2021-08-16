@@ -26,8 +26,6 @@
 
 @import "block/footer/footer";
 
-// ///////////////////////////////////////// display
-// @import "base/display";
 
 @import "block/nav";
 @import "block/social";
@@ -49,7 +47,7 @@
 @import "block/desc";
 @import "block/image-slider";
 @import "block/video-slider";
-@import "block/photo-events.scss";
+@import "block/photo-events";
 @import "block/tour";
 @import "block/services-desc";
 @import "block/about-us";
@@ -64,3 +62,8 @@
 @import "block/contacts";
 @import "block/slider-big";
 @import "block/fancybox";
+
+
+// ///////////////////////////////////////// display
+@import "base/display";
+

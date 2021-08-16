@@ -1,6 +1,29 @@
 .search {
+  position: relative;
+
   display: flex;
   justify-content: center;
+
+  &--sm {
+    display: none;
+
+    @media (max-width: $lg) {
+      display: flex;
+      margin-top: 40px;
+    }
+  }
+
+  &--lg {
+    display: flex;
+
+    @media (max-width: $sl) {
+      display: flex;
+    }
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
 }
 
 .search__input {
@@ -9,6 +32,11 @@
 
   border: 1px solid $c-black;
   border-radius: 30px;
+
+  @media (max-width: $lg) {
+    min-width: 284px;
+    padding: 3px 10px 4px 32px;
+  }
 
   &:hover,
   &:focus {
@@ -24,4 +52,9 @@
   font-family: $ff-main;
   color: $c-secondary;
   font-style: normal;
+  letter-spacing: .02em;
+
+  @media (max-width: $lg) {
+    font-size: $fz-secondary;
+  }
 }

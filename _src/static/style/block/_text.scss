@@ -8,11 +8,15 @@
   color: $c-secondary;
   font-style: normal;
 
+  @media (max-width: $lg) {
+    font-size: 12px;
+  }
+
   &--sm {
     margin-top: 15px;
 
     font-weight: 400;
-    font-size: 16px;
+    font-size: $fz-secondary;
     line-height: 1.4;
     font-family: $ff-main;
     color: $c-secondary;
@@ -31,10 +35,18 @@
     font-weight: 700;
     font-size: $fz-main;
     line-height: 1.5;
+
+    @media (max-width: $lg) {
+      font-size: 12px;
+    }
   }
 
   &--bold-color {
     font-weight: 700;
     color: $c-main;
+  }
+
+  &--border {
+    border-bottom: 1px solid $c-secondary;
   }
 }
