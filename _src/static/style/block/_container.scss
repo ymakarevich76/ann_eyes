@@ -14,16 +14,16 @@
   }
 
   @media (max-width: $lg) {
-    max-width: 320px;
+    max-width: 720px;
     padding-right: 18px;
     padding-left: 18px;
   }
 
-  &--sm {
-    max-width: 670px;
+  @media (max-width: $md) {
+    max-width: 540px;
+  }
 
-    @media (max-width: $sl) {
-      max-width: 803px;
-    }
+  @media (max-width: $sm) {
+    max-width: 100%;
   }
 }

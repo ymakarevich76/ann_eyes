@@ -5,7 +5,7 @@
     margin-bottom: 67px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 35px;
   }
 }
@@ -16,7 +16,7 @@
 .reviews__title {
   margin-bottom: 52px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 17px;
   }
 }
@@ -33,7 +33,7 @@
 
   transition: .2s;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
   }
 }
 
@@ -43,7 +43,7 @@
 
   transform: scale(1.2);
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     transform: scale(2);
   }
 }

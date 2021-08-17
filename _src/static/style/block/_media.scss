@@ -5,20 +5,24 @@
   // max-width: 670px;
 }
 
-.media__title {
-  margin-bottom: 35px;
-}
-
 .media__desc {
   margin-bottom: 80px;
-}
 
-.media__desc-title {
-  margin-bottom: 35px;
+  @media (max-width: $sm) {
+    margin-bottom: 40px;
+  }
 }
 
 .media__desc-text {
   line-height: 1.37;
+}
+
+.media__desc-text br {
+  display: block;
+
+  @media (max-width: $sl) {
+    display: none;
+  }
 }
 
 .media__desc-text.text--border {

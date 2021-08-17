@@ -10,7 +10,7 @@
     padding-bottom: 20px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     padding-bottom: 25px;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
@@ -54,7 +54,7 @@
     margin-bottom: 41px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 0;
   }
 }
@@ -70,12 +70,33 @@
   }
 
   @media (max-width: $lg) {
+    top: 100px;
+    left: -30px;
+  }
+
+  @media (max-width: $md) {
+    top: 140px;
+    left: 20px;
+  }
+
+  @media (max-width: $sm) {
     top: 60px;
     left: 0;
   }
 }
 
 .header__logo {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $md) {
+    width: 150px;
+    height: auto;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
 }
 
 .header__title {
@@ -98,6 +119,10 @@
   }
 
   @media (max-width: $lg) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $sm) {
     font-size: 24px;
   }
 }
@@ -115,7 +140,7 @@
     margin-left: 0;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-top: 22px;
   }
 }
@@ -123,7 +148,7 @@
 .header__social {
   margin-bottom: 28px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 0;
   }
 }
@@ -132,7 +157,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: none;
   }
 }
@@ -140,12 +165,13 @@
 .header__bottom {
   max-width: 1431px;
 
-  @media (max-width: $sl) {
+  @media (max-width: $lg) {
+    max-width: 760px;
   }
 }
 
 .header__nav {
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     position: fixed;
     top: 0;
     right: 0;
@@ -166,7 +192,7 @@
 }
 
 .header__nav-list {
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -186,9 +212,11 @@
 .header__burger {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     position: absolute;
+    right: 0;
     right: 18px;
+    bottom: 0;
     bottom: 0;
 
     display: block;
@@ -197,12 +225,17 @@
 
     background: url(../img/icon/burger.svg) center center no-repeat;
   }
+
+  // @media (max-width: $sm) {
+  //   right: 18px;
+  //   bottom: 0;
+  // }
 }
 
 .header__btn-close {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     position: absolute;
     top: 20px;
     right: 12px;

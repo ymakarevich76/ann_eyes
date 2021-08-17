@@ -5,7 +5,7 @@
     margin-bottom: 78px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 40px;
   }
 }
@@ -38,7 +38,7 @@
     background: url("../img/icon/select.svg") center center no-repeat;
     background-size: 100%;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       top: -4px;
       left: 18px;
 
@@ -58,7 +58,7 @@
 
     background-color: $c-white;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       top: 4px;
     }
   }
@@ -69,7 +69,7 @@
     margin-left: 44px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -89,7 +89,7 @@
   background-image: none;
   border-color: transparent;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     padding-left: 40px;
 
     font-weight: 400;

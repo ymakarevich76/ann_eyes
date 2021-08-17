@@ -5,13 +5,13 @@
   margin: 0 -8px;
 
 
-  @media (max-width: $sl) {
+  @media (max-width: $lg) {
     flex-wrap: wrap;
     max-width: 580px;
     margin: 0 auto;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin: 0 -4px;
   }
 }
@@ -40,14 +40,17 @@
     opacity: .5;
   }
 
-
   @media (max-width: $sl) {
+    min-height: 300px;
+  }
+
+  @media (max-width: $lg) {
     width: calc(100% / 2 - 16px);
     min-height: 360px;
     margin-bottom: 40px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     width: calc(100% / 2 - 8px);
     min-height: auto;
     margin: 0 4px 20px;

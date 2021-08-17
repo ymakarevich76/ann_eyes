@@ -7,7 +7,7 @@
   &--sm {
     display: none;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       display: flex;
       margin-top: 40px;
     }
@@ -20,7 +20,7 @@
       display: flex;
     }
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       display: none;
     }
   }
@@ -33,7 +33,7 @@
   border: 1px solid $c-black;
   border-radius: 30px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     min-width: 284px;
     padding: 3px 10px 4px 32px;
   }
@@ -54,7 +54,7 @@
   font-style: normal;
   letter-spacing: .02em;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     font-size: $fz-secondary;
   }
 }

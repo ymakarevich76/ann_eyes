@@ -4,7 +4,7 @@
     margin-bottom: 40px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 25px;
   }
 }
@@ -14,7 +14,7 @@
     padding-bottom: 19px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     min-height: 256px;
     margin-bottom: 15px;
     padding-bottom: 10px;
@@ -26,7 +26,7 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 7px;
   }
 }
@@ -46,7 +46,11 @@
   line-height: 1.1;
   text-align: left;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sl) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $sm) {
     margin-bottom: 12px;
 
     font-size: $fz-secondary;
@@ -70,7 +74,7 @@
   color: $c-white;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     padding-left: 28px;
 
     font-size: 12px;
@@ -79,7 +83,7 @@
   &--time {
     margin-bottom: 12px;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       margin-bottom: 18px;
     }
 
@@ -96,7 +100,7 @@
       background: url("../img/icon/time.svg") center center no-repeat;
       background-size: 100%;
 
-      @media (max-width: $lg) {
+      @media (max-width: $sm) {
         width: 15px;
         height: 15px;
 
@@ -108,7 +112,7 @@
   &--age {
     margin-bottom: 17px;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       margin-bottom: 13px;
     }
 
@@ -125,7 +129,7 @@
       background: url("../img/icon/baby.svg") center center no-repeat;
       background-size: 100%;
 
-      @media (max-width: $lg) {
+      @media (max-width: $sm) {
         width: 18px;
         height: 14px;
 
@@ -138,7 +142,7 @@
 .card__desc-text br {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: block;
   }
 }
@@ -151,7 +155,7 @@
   color: $c-white;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     font-size: $fz-main;
   }
 }

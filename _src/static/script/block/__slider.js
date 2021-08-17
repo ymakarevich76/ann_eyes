@@ -20,8 +20,11 @@ const imgSlider = new Swiper('.image-slider__container', {
   slidesPerView: 1,
 
   breakpoints: {
+    426: {
+      slidesPerView: 2,
+    },
 
-    1024: {
+    768: {
       slidesPerView: 3,
     },
 
@@ -58,11 +61,3 @@ const bigSlider = new Swiper('.slider-big__container', {
   slidesPerView: 1,
   initialSlide: 1,
 });
-
-// var sliderThumbs = new Swiper('.slider-thumbs', {
-
-//   slideToClickedSlide: true,
-// });
-
-// bigSlider.params.control = sliderThumbs;
-// sliderThumbs.params.control = bigSlider;

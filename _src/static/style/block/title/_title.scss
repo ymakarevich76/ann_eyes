@@ -10,6 +10,10 @@
   font-style: italic;
 
   @media (max-width: $lg) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $sm) {
     font-size: $fz-secondary;
   }
 }
@@ -25,7 +29,7 @@
   color: $c-white;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     font-size: 12px;
     line-height: 1.1;
   }
@@ -33,6 +37,7 @@
 
 .title-3 {
   margin: 0;
+  margin-bottom: 35px;
 
   font-weight: 800;
   font-size: 46px;
@@ -42,13 +47,20 @@
   color: $c-secondary;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $sm) {
+    margin-bottom: 20px;
+
     font-size: $fz-main;
   }
 }
 
 .title-4 {
   margin: 0;
+  margin-bottom: 40px;
 
   font-weight: 700;
   font-size: 24px;
@@ -59,6 +71,14 @@
   font-style: normal;
 
   @media (max-width: $lg) {
+    margin-bottom: 32px;
+
+    font-size: $fz-main;
+  }
+
+  @media (max-width: $sm) {
+    margin-bottom: 20px;
+
     font-size: $fz-secondary;
     text-align: left;
   }

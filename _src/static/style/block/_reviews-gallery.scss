@@ -1,0 +1,22 @@
+.reviews__gallery {
+}
+
+.reviews__gallery-container {
+  max-width: 1261px;
+
+  @media (max-width: $sl) {
+    max-width: 930px;
+  }
+}
+
+.reviews__gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.reviews__gallery-img-wrap {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}

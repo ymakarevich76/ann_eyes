@@ -18,7 +18,7 @@
   color: $c-secondary;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     font-size: 12px;
   }
 
@@ -36,7 +36,7 @@
       background: url("../img/icon/time-blue.svg") center center no-repeat;
       background-size: 100%;
 
-      @media (max-width: $lg) {
+      @media (max-width: $sm) {
         width: 15px;
         height: 15px;
       }
@@ -59,7 +59,7 @@
       background: url("../img/icon/baby-blue.svg") center center no-repeat;
       background-size: 100%;
 
-      @media (max-width: $lg) {
+      @media (max-width: $sm) {
         width: 18px;
         height: 18px;
       }
@@ -79,7 +79,7 @@
   color: $c-secondary;
   font-style: normal;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     font-size: $fz-main;
   }
 }

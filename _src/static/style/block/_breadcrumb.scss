@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   margin: 40px 0;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-top: 20px;
   }
 }
@@ -19,7 +19,13 @@
   font-style: normal;
   white-space: nowrap;
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  @media (max-width: $sm) {
     font-weight: 400;
     font-size: 8px;
     line-height: 1.1;
@@ -28,7 +34,7 @@
   &:not(:last-child) {
     margin-right: 35px;
 
-    @media (max-width: $lg) {
+    @media (max-width: $sm) {
       margin-right: 18px;
     }
   }
@@ -36,7 +42,7 @@
   &:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 50%;
     right: -25px;
 
     display: block;
@@ -45,9 +51,9 @@
 
     background: url("../img/icon/arrow-right.svg") center center no-repeat;
     background-size: 100%;
+    transform: translate(0, -50%);
 
-    @media (max-width: $lg) {
-      top: 1px;
+    @media (max-width: $sm) {
       right: -15px;
 
       width: 8px;

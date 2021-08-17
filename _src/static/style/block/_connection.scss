@@ -92,6 +92,10 @@
 .connection__form-box {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $lg) {
+    align-items: center;
+  }
 }
 
 .connection__form-input {

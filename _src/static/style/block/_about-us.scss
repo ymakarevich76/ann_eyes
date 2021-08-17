@@ -9,25 +9,39 @@
 }
 
 .about-us__title {
-  margin-bottom: 35px;
+  @media (max-width: $sm) {
+    order: 0;
+  }
 }
 
 .about-us__wrap-img {
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
+
+  @media (max-width: $sm) {
+    order: -1;
+    margin-bottom: 40px;
+  }
 }
 
 .about-us__desc {
-  // max-width: 610px;
   margin: 0 auto;
-}
 
-.about-us__desc-title {
-  margin-bottom: 40px;
+  @media (max-width: $sm) {
+    order: 1;
+  }
 }
 
 .about-us__desc-text {
   font-size: $fz-main;
   line-height: 1.37;
+}
+
+.about-us__desc-text br {
+  display: block;
+
+  @media (max-width: $sl) {
+    display: none;
+  }
 }

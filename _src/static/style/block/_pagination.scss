@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination__arrow-next,
+.pagination__arrow-prev {
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.pagination__arrow-next {
+  margin-left: 40px;
+
+  background: url("../img/icon/arrow-next.svg") no-repeat center center;
+  background-size: 100%;
+}
+
+.pagination__arrow-prev {
+  margin-right: 40px;
+
+  background: url("../img/icon/arrow-prev.svg") no-repeat center center;
+  background-size: 100%;
+}
+
+.pagination__page {
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.3;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+  letter-spacing: .02em;
+
+  &:not(:last-child) {
+    padding-right: 30px;
+  }
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+  }
+
+  &--current {
+    color: $c-main;
+  }
+}

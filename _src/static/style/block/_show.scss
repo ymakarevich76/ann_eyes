@@ -4,47 +4,48 @@
 .show__title {
   margin-bottom: 40px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
     margin-bottom: 20px;
   }
 }
 
 .show__container {
   max-width: 1241px;
-  margin: 0 auto;
 
-  @media (max-width: $sl) {
-    max-width: 881px;
+  @media (max-width: $md) {
+    padding: 0;
   }
 }
 
 .show__wrapper {
   display: flex;
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
     flex-direction: column;
   }
 }
 
 .show__left {
   flex: 0 0 50%;
+  margin-right: 40px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $md) {
     flex-basis: 100%;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 }
 
 .show__wrap-img {
   min-width: 581px;
-  margin-right: 40px;
   margin-bottom: 40px;
 
   @media (max-width: $sl) {
-    min-width: 411px;
+    min-width: 50%;
   }
-  @media (max-width: $lg) {
-    min-width: 320px;
+
+  @media (max-width: $md) {
+    min-width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -56,14 +57,14 @@
 .show__card-title {
   margin-bottom: 40px;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
   }
 }
 
 .show__card-title br {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: block;
   }
 }
@@ -72,10 +73,10 @@
   flex: 0 0 560px;
 
   @media (max-width: $sl) {
-    flex-basis: 397px;
+    flex-basis: calc(50% - 40px);
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     flex-basis: 100%;
     padding: 0 17px;
   }
@@ -84,7 +85,7 @@
 .show__wrap-btn {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: flex;
     justify-content: center;
   }

@@ -19,7 +19,13 @@
 .nav__top,
 .nav__bottom {
   display: flex;
+
   @media (max-width: $lg) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: $sm) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -37,16 +43,24 @@
   @media (max-width: $lg) {
     margin-bottom: 0;
   }
+
+  @media (max-width: $sm) {
+    margin-bottom: 0;
+  }
 }
 
 .nav__bottom {
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     margin-bottom: 30px;
   }
 }
 
 .nav__item {
   height: 24px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
 
   &:not(:last-child) {
     margin-right: 30px;
@@ -66,6 +80,11 @@
   letter-spacing: .02em;
 
   @media (max-width: $lg) {
+    font-weight: 500;
+    font-size: $fz-secondary;
+  }
+
+  @media (max-width: $sm) {
     font-weight: 400;
     font-size: $fz-secondary;
   }
@@ -81,7 +100,7 @@
 .nav__phone {
   display: none;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

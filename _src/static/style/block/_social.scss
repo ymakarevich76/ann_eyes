@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     justify-content: center;
   }
 }
@@ -22,18 +22,64 @@
     margin-right: 17px;
   }
 
-  @media (max-width: $lg) {
+  @media (max-width: $sm) {
     width: 28px;
     height: 28px;
   }
 
-  &:hover {
-    background-color: $c-green;
-    border-color: $c-green;
-  }
+
 
   &:hover svg {
     fill: $c-white;
+  }
+
+  &--vb {
+    &:hover {
+      background-color: #8f5db7;
+      border-color: #8f5db7;
+    }
+  }
+
+  &--tg {
+    &:hover {
+      background-color: #08c;
+      border-color: #08c;
+    }
+  }
+
+  &--wh {
+    &:hover {
+      background-color: $c-green;
+      border-color: $c-green;
+    }
+  }
+
+  &--vk {
+    &:hover {
+      background-color: #597da3;
+      border-color: #597da3;
+    }
+  }
+
+  &--yt {
+    &:hover {
+      background-color: #c4302b;
+      border-color: #c4302b;
+    }
+  }
+
+  &--fb {
+    &:hover {
+      background-color: #3b5998;
+      border-color: #3b5998;
+    }
+  }
+
+  &--inst {
+    &:hover {
+      background-color: #3f729b;
+      border-color: #3f729b;
+    }
   }
 }
 

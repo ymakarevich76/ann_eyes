@@ -1,0 +1,132 @@
+.cooperation {
+  margin-bottom: 80px;
+}
+
+.cooperation__container {
+  max-width: 918px;
+}
+
+.cooperation__desc {
+  margin-bottom: 120px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 40px;
+  }
+}
+
+
+.cooperation__new {
+  margin-bottom: 80px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 40px;
+  }
+}
+
+.cooperation__new-title {
+  display: flex;
+
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.cooperation__new-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: $sm) {
+    max-height: 130px;
+  }
+}
+
+.cooperation__new-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (max-width: $sm) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.cooperation__new-link {
+  font-weight: 700;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+
+    border-bottom: 1px solid $c-main;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 12px;
+  }
+}
+
+.cooperation__present-title {
+  @media (max-width: $sm) {
+    font-weight: 800;
+    font-size: $fz-main;
+    text-align: center;
+  }
+}
+
+.cooperation__present-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: $sm) {
+    max-height: 210px;
+  }
+}
+
+.cooperation__present-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (max-width: $sm) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+
+.cooperation__present-link {
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.1;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+
+  &:hover {
+    color: $c-secondary;
+    text-decoration: none;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 12px;
+  }
+}
+
+.cooperation__present-link span {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.3;
+  font-family: $ff-main;
+  color: $c-secondary;
+  font-style: normal;
+
+  @media (max-width: $sm) {
+    font-size: 12px;
+  }
+}
