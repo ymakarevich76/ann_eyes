@@ -13,10 +13,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 -5px;
   margin-bottom: 60px;
 }
 
 .reviews__gallery-img-wrap {
-  margin-right: 10px;
-  margin-bottom: 20px;
+  width: calc(100% / 4 - 10px);
+  margin: 0 5px 20px;
+
+  @media (max-width: $md) {
+    width: calc(100% / 3 - 10px);
+  }
+
+  @media (max-width: $sm) {
+    width: calc(100% / 2 - 10px);
+  }
+
+  @media (max-width: $xs) {
+    width: 100%;
+  }
 }
+
+.reviews__gallery-img-wrap a {
+  @media (max-width: $xs) {
+    display: flex;
+    justify-content: center;
+  }
+}
+

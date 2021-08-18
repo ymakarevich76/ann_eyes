@@ -25,6 +25,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "@fancyapps/ui": "^4.0.0-beta.1",
+    "bootstrap": "^4.6.0",
+    "swiper": "^6.8.2"
   }
 }

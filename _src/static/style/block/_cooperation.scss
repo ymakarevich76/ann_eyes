@@ -59,6 +59,8 @@
   color: $c-secondary;
   font-style: normal;
 
+  transition: .2s;
+
   &:hover {
     color: $c-main;
     text-decoration: none;

@@ -26,6 +26,11 @@
   background-size: 100%;
 }
 
+.pagination__links {
+  display: flex;
+  justify-content: center;
+}
+
 .pagination__page {
   font-weight: 500;
   font-size: $fz-main;
@@ -46,5 +51,15 @@
 
   &--current {
     color: $c-main;
+  }
+
+  @media (max-width: $sm) {
+    display: none;
+
+    &:first-child,
+    &:last-child,
+    &--dots {
+      display: block;
+    }
   }
 }

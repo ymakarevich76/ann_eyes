@@ -1,9 +1,5 @@
 .services {
-  padding-bottom: 80px;
-
-  @media (max-width: $sl) {
-    padding-bottom: 0;
-  }
+  margin-bottom: 30px;
 }
 
 .services__title {
@@ -15,138 +11,58 @@
 }
 
 .services__wrapper.box {
-  margin-bottom: 30px;
-
-  @media (max-width: $sm) {
-    margin-bottom: 67px;
-  }
 }
 
 .services__link.box__blue-card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 
-  @media (max-width: $sl) {
-    margin-bottom: 98px;
+  min-height: auto;
+  margin-bottom: 97px;
+  padding: 31% 0 0;
+
+  @media (max-width: $lg) {
+    padding-top: 62%;
   }
 
   @media (max-width: $sm) {
-    margin-bottom: 50px;
-    padding-bottom: 14px;
-  }
-
-  &:nth-child(3) {
-    @media (max-width: $sm) {
-      padding-bottom: 0;
-    }
+    margin-bottom: 65px;
   }
 }
 
-.services__wrap-img {
-  position: relative;
+.services__picture {
+  position: absolute;
+  top: 0;
+  right: -18px;
+  left: -18px;
 
-  width: 100%;
   height: 100%;
-  min-height: 145px;
+
+  @media (max-width: $md) {
+    right: -9px;
+    left: -9px;
+  }
 }
 
 .services__img {
-  &--1 {
-    // position: absolute;
-    position: relative;
-    top: -2px;
-    left: -40px;
-
-    // max-width: 306px;
-
-
-    @media (max-width: $sl) {
-      // max-width: 250px;
-    }
-
-    @media (max-width: $sm) {
-      left: -19px;
-
-      // max-width: 155px;
-    }
-  }
-
-  &--2 {
-    // position: absolute;
-    position: relative;
-    top: -22px;
-    left: -15px;
-
-    // max-width: 268px;
-
-    @media (max-width: $sl) {
-      top: 0;
-
-      // max-width: 210px;
-    }
-
-    @media (max-width: $sm) {
-      top: -8px;
-      left: -5px;
-
-      // max-width: 142px;
-    }
-  }
-
-  &--3 {
-    // position: absolute;
-    position: relative;
-    top: -48px;
-    left: -32px;
-
-    // max-width: 299px;
-
-    @media (max-width: $sl) {
-      // max-width: 240px;
-    }
-
-    @media (max-width: $sm) {
-      top: -21px;
-      left: -17px;
-
-      // max-width: 148px;
-    }
-  }
-
-  &--4 {
-    // position: absolute;
-    position: relative;
-    top: 17px;
-    left: -34px;
-
-    // max-width: 301px;
-
-    @media (max-width: $sl) {
-      // max-width: 240px;
-    }
-
-    @media (max-width: $sm) {
-      top: 10px;
-      left: -13px;
-
-      // max-width: 149px;
-    }
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .services__name {
-  position: relative;
-  top: 70px;
+  position: absolute;
+  top: calc(100% + 20px);
 
+  width: 100%;
+
+  text-align: center;
   color: $c-main;
-
-  @media (max-width: $sm) {
-    top: 40px;
-  }
 }
 
 .services__name br {
   display: none;
+
   @media (max-width: $sm) {
     display: block;
   }

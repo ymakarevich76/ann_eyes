@@ -27,6 +27,6 @@
   }
 }
 
-.fancybox-thumbs__list a:before {
+.carousel__slide.is-nav-selected .fancybox__thumb::after {
   border: 3px solid $c-accent;
 }

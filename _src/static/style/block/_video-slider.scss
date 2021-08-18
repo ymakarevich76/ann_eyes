@@ -10,3 +10,28 @@
   display: flex;
   justify-content: center;
 }
+
+.video-slider__wrap-video iframe {
+  border: none;
+}
+
+.video-slider__btn-prev,
+.video-slider__btn-next {
+  &::after {
+    color: $c-white;
+  }
+
+  &::before {
+    background-color: $c-main;
+  }
+
+  &:hover {
+    &::before {
+      opacity: .5;
+    }
+
+    &::after {
+      color: $c-white;
+    }
+  }
+}

@@ -28,6 +28,8 @@
 .media__desc-text.text--border {
   cursor: pointer;
 
+  transition: .2s;
+
   &:hover {
     font-weight: 700;
     color: $c-main;

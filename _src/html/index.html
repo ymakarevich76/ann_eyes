@@ -6,7 +6,7 @@
   @@include('block/insert.html')
 
 
-  <form class="search search--sm" id="form-search">
+  <form class="search search--sm">
     <input type="search" class="search__input" name="search" placeholder="Поиск программ...">
   </form>
 
@@ -17,37 +17,28 @@
       <div class="programs__wrapper box">
         <a href="author-programs.html" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
-            <picture>
-              <source srcset="static/img/programs/img-1.png" media="(min-width: 425px)">
-              <img class="programs__img" src="static/img/programs/img-1-mob.png" alt="Фокусник">
-            </picture>
+            <img class="programs__img" src="static/img/programs/img-1.png" alt="Фокусник">
           </div>
           <p class="programs__title title-2">Авторские программы</p>
         </a>
         <a href="#" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
-            <picture>
-              <source srcset="static/img/programs/img-2.png" media="(min-width: 425px)">
-              <img class="programs__img" src="static/img/programs/img-2-mob.png" alt="Шары">
-            </picture>
+
+            <img class="programs__img" src="static/img/programs/img-2.png" alt="Шары">
           </div>
           <p class="programs__title title-2">Программы<br> для детей</p>
         </a>
         <a href="#" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
-            <picture>
-              <source srcset="static/img/programs/img-3.png" media="(min-width: 425px)">
-              <img class="programs__img" src="static/img/programs/img-3-mob.png" alt="Лошадь">
-            </picture>
+
+            <img class="programs__img" src="static/img/programs/img-3.png" alt="Лошадь">
           </div>
           <p class="programs__title title-2">Программы<br> с животными</p>
         </a>
         <a href="#" class="programs__link box__blue-card">
           <div class="programs__wrap-img">
-            <picture>
-              <source srcset="static/img/programs/img-4.png" media="(min-width: 425px)">
-              <img class="programs__img" src="static/img/programs/img-4-mob.png" alt="Свадьба">
-            </picture>
+
+            <img class="programs__img" src="static/img/programs/img-4.png" alt="Свадьба">
 
           </div>
           <p class="programs__title title-2">Программы<br> для взрослых</p>
@@ -57,9 +48,9 @@
     <!--/container-->
   </section>
 
-  <!-- @@include('block/search.html', {class: 'd-lg'}) -->
+  <!-- @@include('block/search.html') -->
 
-  <form class="search search--lg" id="form-search">
+  <form class="search search--lg">
     <input type="search" class="search__input" name="search" placeholder="Поиск программ...">
   </form>
 
@@ -78,39 +69,31 @@
 
       <div class="services__wrapper box">
         <a href="#" class="services__link box__blue-card">
-          <div class="services__wrap-img">
-            <picture>
-              <source srcset="static/img/services/img-1.png" media="(min-width: 768px)">
-              <img class="services__img services__img--1" src="static/img/services/img-1-mob.png" alt="Сладости">
-            </picture>
-          </div>
+          <picture class="services__picture">
+            <source srcset="static/img/services/img-1.png" media="(min-width: 426px)">
+            <img class="services__img" src="static/img/services/img-1-mob.png" alt="Сладости">
+          </picture>
           <p class="services__name title-2">Кэнди бар</p>
         </a>
         <a href="#" class="services__link box__blue-card">
-          <div class="services__wrap-img">
-            <picture>
-              <source srcset="static/img/services/img-2.png" media="(min-width: 768px)">
-              <img class="services__img services__img--2" src="static/img/services/img-2-mob.png" alt="Игрушки">
-            </picture>
-          </div>
+          <picture class="services__picture">
+            <source srcset="static/img/services/img-2.png" media="(min-width: 426px)">
+            <img class="services__img" src="static/img/services/img-2-mob.png" alt="Игрушки">
+          </picture>
           <p class="services__name title-2">Декор</p>
         </a>
         <a href="#" class="services__link box__blue-card">
-          <div class="services__wrap-img">
-            <picture>
-              <source srcset="static/img/services/img-3.png" media="(min-width: 768px)">
-              <img class="services__img services__img--3" src="static/img/services/img-3-mob.png" alt="Фотоаппарат">
-            </picture>
-          </div>
+          <picture class="services__picture">
+            <source srcset="static/img/services/img-3.png" media="(min-width: 426px)">
+            <img class="services__img" src="static/img/services/img-3-mob.png" alt="Фотоаппарат">
+          </picture>
           <p class="services__name title-2">Фото-<br> и видеосъемка</p>
         </a>
         <a href="#" class="services__link box__blue-card">
-          <div class="services__wrap-img">
-            <picture>
-              <source srcset="static/img/services/img-4.png" media="(min-width: 768px)">
-              <img class="services__img services__img--4" src="static/img/services/img-4-mob.png" alt="Шары">
-            </picture>
-          </div>
+          <picture class="services__picture">
+            <source srcset="static/img/services/img-4.png" media="(min-width: 426px)">
+            <img class="services__img" src="static/img/services/img-4-mob.png" alt="Шары">
+          </picture>
           <p class="services__name title-2">Шары</p>
         </a>
       </div>

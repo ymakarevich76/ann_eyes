@@ -37,6 +37,8 @@
     font-weight: 700;
     font-size: 11px;
     color: $c-secondary;
+
+    transition: .2s;
   }
 
 
@@ -51,6 +53,8 @@
 
     background-color: $c-white;
     border-radius: 50%;
+
+    transition: .2s;
   }
 
   &:hover {
@@ -64,43 +68,3 @@
   }
 }
 
-.image-slider__btn-prev {
-  &::after {
-    left: 17px;
-  }
-
-  &::before {
-    right: -8px;
-  }
-}
-
-.image-slider__btn-next {
-  &::after {
-    left: 3px;
-  }
-
-  &::before {
-    right: 6px;
-  }
-}
-
-.video-slider__btn-prev,
-.video-slider__btn-next {
-  &::after {
-    color: $c-white;
-  }
-
-  &::before {
-    background-color: $c-main;
-  }
-
-  &:hover {
-    &::before {
-      opacity: .5;
-    }
-
-    &::after {
-      color: $c-white;
-    }
-  }
-}

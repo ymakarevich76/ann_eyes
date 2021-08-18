@@ -6,6 +6,8 @@
   color: $c-secondary;
   letter-spacing: .02em;
 
+  transition: .2s;
+
   &:first-child {
     margin-bottom: 5px;
   }

@@ -18,3 +18,24 @@
   display: flex;
   justify-content: center;
 }
+
+
+.image-slider__btn-prev {
+  &::after {
+    left: 17px;
+  }
+
+  &::before {
+    right: -8px;
+  }
+}
+
+.image-slider__btn-next {
+  &::after {
+    left: 3px;
+  }
+
+  &::before {
+    right: 6px;
+  }
+}

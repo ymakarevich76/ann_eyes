@@ -18,6 +18,8 @@
   border: 1px solid $c-main;
   border-radius: 8px;
 
+  transition: .2s;
+
   &:not(:last-child) {
     margin-right: 17px;
   }

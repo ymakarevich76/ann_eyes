@@ -141,6 +141,8 @@
   text-align: left;
   color: $c-secondary;
 
+  transition: .2s;
+
   &:hover {
     font-weight: 700;
     color: $c-main;
